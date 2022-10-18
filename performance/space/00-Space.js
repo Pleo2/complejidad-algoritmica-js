@@ -1,21 +1,24 @@
 function contar(n) {
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i <= n; i++) {
     console.log(i);
   }
 }
+contar(20);
 
 function repetir(arreglo) {
-  let arreglo_repetido = arreglo;
-  return arreglo_repetido;
+  return arreglo
 }
+
+console.log(repetir(20));
 
 function convertirAString(arreglo) {
-  let resultado = arreglo.map((elemento) => elemento.toString());
-  return resultado;
+  return arreglo.map((elemento) => elemento.toString());
 }
 
+console.log(convertirAString([20, 20 , 20, 20 ]));
+
 function dosDimensiones(valor) {
-  let x = new Array(valor);
+  let x = [valor];
   for (let i = 0; i < valor; i++) {
     x[i] = new Array(valor).fill(0);
   }
@@ -23,3 +26,5 @@ function dosDimensiones(valor) {
 }
 
 console.log(dosDimensiones(5));
+
+
