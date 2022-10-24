@@ -3,17 +3,17 @@
   Complejidad Espacial -> O( n + 4 ) => O(n);
   Espacio Auxiliar -> O(n + 4 - n) => O(1);
 */
-
-function bubbleSort(arreglo) { // O(n)
-  let longitud = arreglo.length; // O(1)
-  for (let i = 0; i < longitud; i++) { // O(1) 
-    for (let j = 0; j < longitud; j++) { // O(1)
-      if (arreglo[j] > arreglo[j + 1]) { 
-        let temporal = arreglo[j]; // O(1)
-        arreglo[j] = arreglo[j + 1]; 
-        arreglo[j + 1] = temporal; 
+function bubbleSort(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) { 
+      
+      if (arr[j] > arr[j + 1]) {
+        let temporal = arr[j]; 
+        
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temporal;
       }
     }
   }
-  return arreglo; 
+  return arreglo;
 }
