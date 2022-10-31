@@ -15,5 +15,6 @@ function bubbleSort(arr) {
       }
     }
   }
+clg
   return arreglo;
 }
